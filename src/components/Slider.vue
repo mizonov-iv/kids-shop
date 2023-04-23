@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div
         class="slider"
-        :style="{'margin-top': '-' + (100 * currentSlideIndex) + '%'}"
+        :style="{'transform': 'translateY(' + '-' + (100 * currentSlideIndex) + '%)'}"
     >
       <SliderItem
           v-for="item in slides"
@@ -10,9 +10,7 @@
           :item="item"
       />
     </div>
-
   </div>
-  <button @click="nextSlide">Next</button>
 </template>
 
 <script>
@@ -63,16 +61,19 @@ export default {
 
 .wrapper {
   border: 2px solid black;
-  max-width: 400px;
+  position: relative;
   margin: 0 auto;
   overflow: hidden;
   height: 100vh;
+  width: 100vw;
 }
 
 .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   transition: all ease 0.5s;
 }
 

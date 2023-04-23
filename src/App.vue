@@ -1,14 +1,17 @@
 <template>
+  <Navbar/>
   <Slider
       :slides="sliderItems"
+      :interval="3000"
   />
 </template>
 
 <script>
 import Slider from "./components/Slider.vue";
 import SliderItem from "./components/SliderItem.vue";
+import Navbar from "./components/Navbar.vue";
 export default {
-  components: {SliderItem, Slider},
+  components: {SliderItem, Slider, Navbar},
   data()  {
     return {
       sliderItems: [

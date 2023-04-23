@@ -19,12 +19,15 @@ export default {
 <style scoped>
 
 .item-img {
-  width: 400px;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .slider-item {
+  margin: 0 auto;
   width: 100%;
-  height: 280px;
+  height: 100%;
 }
 
 </style>
