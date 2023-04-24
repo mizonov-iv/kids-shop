@@ -1,5 +1,5 @@
 <template>
-  <div class="container p-4 px-8 flex justify-between absolute top-0 left-0">
+  <div class="container p-4 px-8 flex justify-between">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
@@ -16,45 +16,35 @@
     </div>
   </div>
 
-<div>
-
-  <Slider
-      :slides="slides"
-  />
-
-
-
-</div>
-
-<!--  <div class="mt-8 m-auto h-screen w-96 p-4 border">-->
-<!--    <swiper-->
-<!--        class="border"-->
-<!--        :direction="'vertical'"-->
-<!--        :modules="modules"-->
-<!--        :space-between="20"-->
-<!--        :loop="false"-->
-<!--        :pagination="true"-->
-<!--        :autoplay="{-->
-<!--        delay: 7000,-->
-<!--        disableOnInteraction: false,-->
-<!--        pauseOnMouseEnter: true-->
-<!--      }"-->
-<!--    >-->
-<!--      <swiper-slide v-for="item in swiperItems">-->
-<!--        <div>-->
-<!--          <p>{{item.title}}</p>-->
-<!--          <img :src="item.img_url" :alt="item.title">-->
-<!--        </div>-->
-<!--      </swiper-slide>-->
-<!--    </swiper>-->
-<!--  </div>-->
+    <swiper
+        class="border w-96 m-auto"
+        :modules="modules"
+        :space-between="0"
+        :loop="false"
+        :pagination="false"
+        :autoplay="{
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      }"
+    >
+      <swiper-slide
+          v-for="item in swiperItems"
+          class=" m-auto"
+      >
+        <div>
+          <p>{{item.title}}</p>
+          <img :src="item.img_url" :alt="item.title">
+        </div>
+      </swiper-slide>
+    </swiper>
 
 </template>
 
 <script>
 
 import {Swiper, SwiperSlide} from "swiper/vue";
-import {Autoplay, Navigation, Pagination} from "swiper";
+import {A11y, Autoplay, Navigation, Pagination, Scrollbar} from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

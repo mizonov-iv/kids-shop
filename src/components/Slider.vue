@@ -1,6 +1,8 @@
 <template>
   <div class="slider">
+    <SliderItem
 
+    />
   </div>
 </template>
 
@@ -8,7 +10,9 @@
 import SliderItem from "./SliderItem.vue";
 export default {
   components: {SliderItem},
-  props: ['slides']
+  props: {
+
+  }
 
 }
 </script>
