@@ -33,11 +33,11 @@
 
   <div class="fixed top-0 left-0 z-30 bg-white w-96 h-screen" v-show="isOpen">
     <ul class="mt-20 px-6 uppercase text-xs	">
-      <li class="mb-3">девочки | 6 - 14 лет</li>
-      <li class="mb-3">мальчики | 6 - 14 лет</li>
-      <li class="mb-3">малыши девочки | 9 месяцев - 6 лет</li>
-      <li class="mb-3">малыши мальчики | 9 месяцев - 6 лет</li>
-      <li class="mb-3">аксессуары | обувь</li>
+      <li class="mb-3 cursor-pointer">девочки | 6 - 14 лет</li>
+      <li class="mb-3 cursor-pointer">мальчики | 6 - 14 лет</li>
+      <li class="mb-3 cursor-pointer">малыши девочки | 9 месяцев - 6 лет</li>
+      <li class="mb-3 cursor-pointer">малыши мальчики | 9 месяцев - 6 лет</li>
+      <li class="mb-3 cursor-pointer">аксессуары | обувь</li>
     </ul>
   </div>
 </template>

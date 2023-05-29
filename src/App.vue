@@ -1,9 +1,10 @@
 <template>
   <Navbar/>
-  <Slider
-      :slides="sliderItems"
-      :interval="3000"
-  />
+  <RouterView/>
+<!--  <Slider-->
+<!--      :slides="sliderItems"-->
+<!--      :interval="3000"-->
+<!--  />-->
 </template>
 
 <script>
