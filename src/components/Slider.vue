@@ -60,7 +60,6 @@ export default {
 <style scoped>
 
 .wrapper {
-  border: 2px solid black;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
