@@ -1,6 +1,9 @@
 <template>
   <div class="slider-item">
-    <img class="item-img" :src="item.img_url" alt="">
+<!--    <img class="item-img" :src="item.img_url" alt="">-->
+    <p class="slider-title">
+      {{item.title}}
+    </p>
   </div>
 </template>
 
@@ -28,6 +31,17 @@ export default {
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-title {
+  display: block;
+  text-align: center;
+  font-size: 64px;
+  color: white;
 }
 
 </style>
