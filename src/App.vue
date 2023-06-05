@@ -1,13 +1,10 @@
 <template>
   <Navbar/>
-  <Slider
-      :slides="sliderItems"
-      :interval="3000"
-  />
-  <div style="background: black; width: 500px; height: 500px">
-    <a href="https://www.litres.ru/abonement/?from=1062194285"  class="benefits-btn">Подключить</a>
-  </div>
-
+  <RouterView/>
+<!--  <Slider-->
+<!--      :slides="sliderItems"-->
+<!--      :interval="3000"-->
+<!--  />-->
 </template>
 
 <script>

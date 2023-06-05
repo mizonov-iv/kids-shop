@@ -29,6 +29,17 @@ export default {
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-title {
+  display: block;
+  text-align: center;
+  font-size: 64px;
+  color: white;
 }
 
 </style>
