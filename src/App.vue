@@ -4,6 +4,10 @@
       :slides="sliderItems"
       :interval="3000"
   />
+  <div style="background: black; width: 500px; height: 500px">
+    <a href="https://www.litres.ru/abonement/?from=1062194285"  class="benefits-btn">Подключить</a>
+  </div>
+
 </template>
 
 <script>
@@ -34,7 +38,23 @@ export default {
 </script>
 
 <style>
-
+.benefits-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 18px auto;
+  width: 161px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+}
 </style>
 
 <!--  <div class="container snap-y snap-mandatory overflow-y-scroll	h-screen scroll-m-1" style="scroll-snap-type: y mandatory">-->

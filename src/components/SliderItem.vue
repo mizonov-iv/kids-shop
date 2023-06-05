@@ -1,6 +1,7 @@
 <template>
   <div class="slider-item">
     <img class="item-img" :src="item.img_url" alt="">
+    <p>{{item.title}}</p>
   </div>
 </template>
 
