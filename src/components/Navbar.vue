@@ -1,16 +1,14 @@
 <template>
-    <div class="container p-4 px-8 flex justify-between absolute top-0 left-0 z-40">
-
+    <div class="nav-wrapper">
 <!--      BURGER BUTTON-->
-
-      <div class="cursor-pointer" v-show="!isOpen" @click.prevent="openNavigation">
+      <div class="burger-btn" v-show="!isOpen" @click.prevent="openNavigation">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </div>
 
 <!--      CLOSE BURGER BUTTON-->
-      <div class="cursor-pointer z-50" v-show="isOpen" @click.prevent="closeNavigation">
+      <div class="burger-btn" v-show="isOpen" @click.prevent="closeNavigation">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>

@@ -8,4 +8,18 @@
     box-sizing: border-box;
 }
 
+/*NAVIGATION*/
+.nav-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    padding: 20px 15px;
+}
 
+.burger-btn {
+    cursor: pointer;
+}
