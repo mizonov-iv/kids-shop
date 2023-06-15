@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="slider-wrapper">
     <div
         class="slider"
         :style="{'transform': 'translateY(' + '-' + (100 * currentSlideIndex) + '%)'}"
@@ -56,24 +56,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-.wrapper {
-  position: relative;
-  margin: 0 auto;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
-.slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transition: all ease 0.5s;
-}
-
-</style>

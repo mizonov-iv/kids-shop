@@ -1,7 +1,7 @@
 <template>
   <div class="slider-item">
-    <img class="item-img" :src="item.img_url" alt="">
-    <p>{{item.title}}</p>
+<!--    <img class="slider-item-img" :src="item.img_url" alt="">-->
+    <p class="slider-item-title">{{item.title}}</p>
   </div>
 </template>
 
@@ -13,33 +13,5 @@ export default {
       default: () => {}
     }
   }
-
 }
 </script>
-
-<style scoped>
-
-.item-img {
-  display: block;
-  width: 600px;
-  margin: 0 auto;
-}
-
-.slider-item {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  background: darkgray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.slider-title {
-  display: block;
-  text-align: center;
-  font-size: 64px;
-  color: white;
-}
-
-</style>
