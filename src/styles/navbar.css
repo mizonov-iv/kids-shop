@@ -22,7 +22,7 @@
 }
 
 .menu-list {
-    margin-top: 60px;
+    margin-top: 110px;
     padding: 0 20px;
     text-transform: uppercase;
 }
@@ -30,6 +30,8 @@
 .menu-list-item {
     margin-bottom: 20px;
     cursor: pointer;
+    list-style: none;
+    z-index: 50;
 }
 
 .burger-btn {
@@ -39,11 +41,10 @@
 .cart-wrapper {
     display: flex;
     flex-direction: column;
-    justify-items: end;
+    align-items: center;
 }
 
 .cart-search {
     text-decoration: underline;
     text-transform: uppercase;
-    /*margin-top: 6px;*/
 }
