@@ -36,19 +36,19 @@
   <div class="menu-wrapper" v-show="isOpen">
     <ul class="menu-list">
       <li class="menu-list-item">
-        <router-link style="text-decoration: none" to="/girls">девочки | 6 - 14 лет</router-link>
+        <router-link class="link" to="/girls">девочки | 6 - 14 лет</router-link>
       </li>
       <li class="menu-list-item">
-        <router-link to="/girls">мальчики | 6 - 14 лет</router-link>
+        <router-link class="link" to="/boys">мальчики | 6 - 14 лет</router-link>
       </li>
       <li class="menu-list-item">
-        <router-link to="/girls">малыши девочки | 9 месяцев - 6 лет</router-link>
+        <router-link class="link" to="/baby-girls">малыши девочки | 9 месяцев - 6 лет</router-link>
       </li>
       <li class="menu-list-item">
-        <router-link to="/girls">малыши мальчики | 9 месяцев - 6 лет</router-link>
+        <router-link class="link" to="/baby-boys">малыши мальчики | 9 месяцев - 6 лет</router-link>
       </li>
       <li class="menu-list-item">
-        <router-link to="/girls">аксессуары | обувь</router-link>
+        <router-link class="link" to="/girls">аксессуары | обувь</router-link>
       </li>
     </ul>
   </div>

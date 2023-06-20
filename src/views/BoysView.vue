@@ -1,6 +1,6 @@
 <template>
   <section>
-    Girls
+    <p></p>
   </section>
 </template>
 

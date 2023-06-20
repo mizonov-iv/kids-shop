@@ -14,6 +14,21 @@ const router = createRouter({
             name: "girls",
             component: () => import("../views/GirlsView.vue"),
         },
+        {
+            path: "/baby-girls",
+            name: "girls",
+            component: () => import("../views/BabyGirlsView.vue"),
+        },
+        {
+            path: "/boys",
+            name: "boys",
+            component: () => import("../views/BoysView.vue"),
+        },
+        {
+            path: "/baby-boys",
+            name: "baby-boys",
+            component: () => import("../views/BabyBoysView.vue"),
+        },
     ],
 });
 

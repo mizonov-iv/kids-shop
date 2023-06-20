@@ -1,6 +1,6 @@
 <template>
   <section>
-    Girls
+    BabyBoys
   </section>
 </template>
 

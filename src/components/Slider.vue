@@ -2,6 +2,7 @@
   <div class="slider-wrapper">
     <div
         class="slider"
+        @scroll="nextSlide"
         :style="{'transform': 'translateY(' + '-' + (100 * currentSlideIndex) + '%)'}"
     >
       <SliderItem
