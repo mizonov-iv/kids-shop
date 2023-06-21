@@ -36,19 +36,31 @@
   <div class="menu-wrapper" v-show="isOpen">
     <ul class="menu-list">
       <li class="menu-list-item">
-        <router-link class="link" to="/girls">девочки | 6 - 14 лет</router-link>
+          <Dropdown
+              :selectedOption="girlsDropdown.selectedOption"
+              :options="girlsDropdown.options"
+          />
       </li>
       <li class="menu-list-item">
-        <router-link class="link" to="/boys">мальчики | 6 - 14 лет</router-link>
+        <Dropdown
+            :selectedOption="boysDropdown.selectedOption"
+            :options="boysDropdown.options"
+        />
       </li>
       <li class="menu-list-item">
-        <router-link class="link" to="/baby-girls">малыши девочки | 9 месяцев - 6 лет</router-link>
+        <Dropdown
+            :selectedOption="babyGirlsDropdown.selectedOption"
+            :options="babyGirlsDropdown.options"
+        />
       </li>
       <li class="menu-list-item">
-        <router-link class="link" to="/baby-boys">малыши мальчики | 9 месяцев - 6 лет</router-link>
+        <Dropdown
+            :selectedOption="babyBoysDropdown.selectedOption"
+            :options="babyBoysDropdown.options"
+        />
       </li>
       <li class="menu-list-item">
-        <router-link class="link" to="/girls">аксессуары | обувь</router-link>
+        Аксессуары
       </li>
     </ul>
   </div>
@@ -56,6 +68,7 @@
 
 <script setup>
 import {ref} from 'vue';
+import Dropdown from "./Dropdown.vue";
 
 const isOpen = ref(false);
 
@@ -67,6 +80,26 @@ const openNavigation = () => {
 const closeNavigation = () => {
   isOpen.value = false;
   console.log('nav is closed');
+}
+
+const girlsDropdown = {
+  selectedOption: "девочки | 6 - 14 лет",
+  options: ['Option 1', 'Option 2', 'Option 3']
+}
+
+const babyGirlsDropdown = {
+  selectedOption: "малыши девочки | 6 - 14 лет",
+  options: ['Option 1', 'Option 2', 'Option 3']
+}
+
+const boysDropdown = {
+  selectedOption: "мальчики | 6 - 14 лет",
+  options: ['Option 1', 'Option 2', 'Option 3']
+}
+
+const babyBoysDropdown = {
+  selectedOption: "малыши мальчики | 6 - 14 лет",
+  options: ['Option 1', 'Option 2', 'Option 3']
 }
 
 </script>
