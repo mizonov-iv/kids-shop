@@ -84,22 +84,22 @@ const closeNavigation = () => {
 
 const girlsDropdown = {
   selectedOption: "девочки | 6 - 14 лет",
-  options: ['Option 1', 'Option 2', 'Option 3']
+  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
 }
 
 const babyGirlsDropdown = {
   selectedOption: "малыши девочки | 6 - 14 лет",
-  options: ['Option 1', 'Option 2', 'Option 3']
+  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
 }
 
 const boysDropdown = {
   selectedOption: "мальчики | 6 - 14 лет",
-  options: ['Option 1', 'Option 2', 'Option 3']
+  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
 }
 
 const babyBoysDropdown = {
   selectedOption: "малыши мальчики | 6 - 14 лет",
-  options: ['Option 1', 'Option 2', 'Option 3']
+  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
 }
 
 </script>
