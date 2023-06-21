@@ -12,7 +12,7 @@
 
 <!--      ZARA LOGO-->
       <div style="font-size: 40px;">
-        LOGO
+        <router-link class="link" to="/">LOGO</router-link>
       </div>
 
       <div class="cart-wrapper">
