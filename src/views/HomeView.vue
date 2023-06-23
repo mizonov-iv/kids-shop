@@ -11,6 +11,27 @@
       <!-- Slides -->
       <div class="swiper-slide">
         <p class="slider-item-title">Slide 1</p>
+
+
+        <div class="products-item-wrapper">
+
+          <div class="products-list-item">
+            <img src="/img/products/jacket.jpg" alt="jacket">
+          </div>
+          <div class="products-list-item">
+            <img src="/img/products/jacket.jpg" alt="jacket">
+          </div>
+          <div class="products-list-item">
+            <img src="/img/products/jacket.jpg" alt="jacket">
+          </div>
+          <div class="products-list-item">
+            <img src="/img/products/jacket.jpg" alt="jacket">
+          </div>
+
+        </div>
+
+
+
       </div>
       <div class="swiper-slide">
         <p class="slider-item-title">Slide 2</p>
@@ -74,10 +95,10 @@ export default {
       },
 
       // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        type: 'progressbar',
-      },
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      //   type: 'progressbar',
+      // },
     })
   },
   data()  {

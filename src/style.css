@@ -2,6 +2,7 @@
 @import "styles/navbar.css";
 @import "styles/slider.css";
 @import "styles/dropdown.css";
+@import "styles/products.css";
 
 * {
     box-sizing: border-box;
@@ -9,6 +10,16 @@
 
 p, ul {
     display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 section {

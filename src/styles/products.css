@@ -1,0 +1,8 @@
+.products-item-wrapper {
+    display: flex;
+}
+
+.products-list-item {
+    width: 320px;
+    margin-right: 15px;
+}
