@@ -17,6 +17,10 @@
 
           <div class="products-list-item">
             <img src="/img/products/jacket.jpg" alt="jacket">
+            <div class="item-btn">
+              <div class="item-btn-plus"></div>
+            </div>
+
           </div>
           <div class="products-list-item">
             <img src="/img/products/jacket.jpg" alt="jacket">
