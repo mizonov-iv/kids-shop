@@ -39,6 +39,7 @@
           <Dropdown
               :selectedOption="girlsDropdown.selectedOption"
               :options="girlsDropdown.options"
+              @goToProduct="goToProduct"
           />
       </li>
       <li class="menu-list-item">
@@ -80,6 +81,10 @@ const openNavigation = () => {
 const closeNavigation = () => {
   isOpen.value = false;
   console.log('nav is closed');
+}
+
+const goToProduct = (selectedOption) => {
+  console.log(selectedOption)
 }
 
 const girlsDropdown = {
