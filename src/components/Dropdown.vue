@@ -5,7 +5,7 @@
       <span class="caret"></span>
     </button>
     <ul v-if="isOpen" class="dropdown-menu">
-      <li v-for="option in options" :key="option" @click="selectOption(option)">
+      <li v-for="option in props.options" :key="option" @click="selectOption(option)">
         {{ option }}
       </li>
     </ul>
@@ -14,6 +14,8 @@
 
 <script setup>
 import {ref} from "vue";
+
+const props = defineProps(['selectedOption','options'])
 
 const emit = defineEmits(['goToProduct'])
 
@@ -30,7 +32,7 @@ const toggleDropdown = () => {
 // const selectOption = () => {
 //
 // }
-
+//
 // export default {
 //   props: ['selectedOption', 'options'],
 //   data() {
