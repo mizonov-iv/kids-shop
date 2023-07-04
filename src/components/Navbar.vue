@@ -36,22 +36,9 @@
   <div class="menu-wrapper" v-show="isOpen">
     <ul class="menu-list">
       <li class="menu-list-item">
-          <Dropdown
-              :selectedOption="girlsDropdown.selectedOption"
-              :options="girlsDropdown.options"
-              @goToProduct="goToProduct"
-          />
-      </li>
-      <li class="menu-list-item">
         <Dropdown
             :selectedOption="boysDropdown.selectedOption"
             :options="boysDropdown.options"
-        />
-      </li>
-      <li class="menu-list-item">
-        <Dropdown
-            :selectedOption="babyGirlsDropdown.selectedOption"
-            :options="babyGirlsDropdown.options"
         />
       </li>
       <li class="menu-list-item">
@@ -87,24 +74,13 @@ const goToProduct = (selectedOption) => {
   console.log(selectedOption)
 }
 
-const girlsDropdown = {
-  selectedOption: "девочки | 6 - 14 лет",
-  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
-}
-
-const babyGirlsDropdown = {
-  selectedOption: "малыши девочки | 6 - 14 лет",
-  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
-}
-
 const boysDropdown = {
   selectedOption: "мальчики | 6 - 14 лет",
-  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
+  options: ['комбинезоны', 'худи', 'брюки']
 }
 
 const babyBoysDropdown = {
   selectedOption: "малыши мальчики | 6 - 14 лет",
-  options: ['базовый гардероб', 'платья', 'комбинезоны', 'футболки', 'толстовки']
+  options: ['комбинезоны', 'худи', 'брюки']
 }
-
 </script>
