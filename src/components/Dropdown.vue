@@ -28,26 +28,4 @@ const isOpen = ref(false)
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value
 }
-
-// const selectOption = () => {
-//
-// }
-//
-// export default {
-//   props: ['selectedOption', 'options'],
-//   data() {
-//     return {
-//       isOpen: false,
-//     };
-//   },
-//   methods: {
-//     toggleDropdown() {
-//       this.isOpen = !this.isOpen;
-//     },
-//     selectOption(option) {
-//       // console.log(option)
-//       this.$emit('goToProduct', option)
-//     }
-//   }
-// };
 </script>

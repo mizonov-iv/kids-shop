@@ -39,12 +39,14 @@
         <Dropdown
             :selectedOption="boysDropdown.selectedOption"
             :options="boysDropdown.options"
+            @goToProduct="goToProduct"
         />
       </li>
       <li class="menu-list-item">
         <Dropdown
             :selectedOption="babyBoysDropdown.selectedOption"
             :options="babyBoysDropdown.options"
+            @goToProduct="goToProduct"
         />
       </li>
       <li class="menu-list-item">
@@ -57,6 +59,10 @@
 <script setup>
 import {ref} from 'vue';
 import Dropdown from "./Dropdown.vue";
+import { useRouter, useRoute } from 'vue-router';
+
+const router = useRouter();
+const route = useRoute();
 
 const isOpen = ref(false);
 
@@ -71,7 +77,15 @@ const closeNavigation = () => {
 }
 
 const goToProduct = (selectedOption) => {
+  router.push({
+    name: 'search',
+    query: {
+      ...route.query,
+      ...query,
+    },
+  })
   console.log(selectedOption)
+
 }
 
 const boysDropdown = {
